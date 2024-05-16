@@ -11,6 +11,8 @@ header {
     background-color: #333;
     color: #fff;
     padding: 1em 0;
+    position: relative;
+    overflow: hidden;
 }
 
 nav ul {
@@ -32,6 +34,38 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
+}
+
+.header-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: #00f;
+    animation: moveLine 5s infinite;
+}
+
+@keyframes moveLine {
+    0% {
+        width: 0;
+        left: 0;
+    }
+    25% {
+        width: 100%;
+        left: 0;
+    }
+    50% {
+        width: 100%;
+        left: 0;
+    }
+    75% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+    }
 }
 
 section {
