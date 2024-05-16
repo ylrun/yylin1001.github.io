@@ -39,7 +39,7 @@ section {
 }
 
 .welcome {
-    background: url('https://github.com/ylrun/yylin1001.github.io/blob/main/Space-Background-Image-2.jpg') no-repeat center center/cover;
+    background: url('https://raw.githubusercontent.com/ylrun/yylin1001.github.io/main/Space-Background-Image-2.jpg') no-repeat center center/cover;
     color: #fff;
     padding: 100px 0;
 }
@@ -85,4 +85,28 @@ footer ul li a:hover {
 .fab {
     margin-right: 5px;
 }
+
+.animated-text {
+    animation: text-animate 2s linear infinite;
+}
+
+@keyframes text-animate {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
 
