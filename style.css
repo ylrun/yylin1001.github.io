@@ -33,10 +33,20 @@ nav ul li a {
 }
 
 .welcome {
-    background: url('https://raw.githubusercontent.com/ylrun/yylin1001.github.io/main/Space-Background-Image-2.jpg') no-repeat center center/cover;
+    background: url('https://raw.githubusercontent.com/ylrun/yylin1001.github.io/main/splash.jpg') no-repeat center center/cover;
     color: #fff;
     padding: 100px 0;
     text-align: center;
+}
+
+.blink-bg {
+    animation: blink 2s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
 }
 
 .welcome h1 {
