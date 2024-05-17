@@ -36,23 +36,24 @@ nav ul li a {
     background: url('https://raw.githubusercontent.com/ylrun/yylin1001.github.io/main/Space-Background-Image-2.jpg') no-repeat center center/cover;
     color: #fff;
     padding: 100px 0;
+    text-align: center;
 }
 
-#welcome h1 {
+.welcome h1 {
     font-size: 2.5rem;
 }
 
-#welcome p {
+.welcome p {
     font-size: 1.2rem;
 }
 
-#welcome button {
+.welcome button {
     margin-top: 1rem;
     padding: 0.5rem 1rem;
     font-size: 1rem;
 }
 
-#welcome .animated-text {
+.welcome .animated-text {
     animation: fadeIn 2s ease-in-out infinite;
 }
 
@@ -106,5 +107,3 @@ footer ul li a {
     text-decoration: none;
     font-size: 1.2rem;
 }
-
-
