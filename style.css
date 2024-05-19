@@ -37,7 +37,7 @@ nav ul li a {
     color: #fff;
     padding: 100px 0;
     text-align: center;
-    overflow: hidden;
+    overflow: hidden; /* Ensure the blinking background stays within the welcome section */
 }
 
 .background-blink {
@@ -49,7 +49,7 @@ nav ul li a {
     height: 100%;
     animation: blink 2s infinite;
     z-index: 0;
-    opacity: 0.8;
+    opacity: 0.8; /* Slightly reduce opacity */
 }
 
 @keyframes blink {
@@ -114,7 +114,7 @@ nav ul li a {
 .slides img {
     width: 100%;
     height: auto;
-    max-width: 300px;
+    max-width: 300px; /* Set a maximum width */
 }
 
 #timeline {
@@ -131,6 +131,9 @@ nav ul li a {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .timeline-item {
@@ -144,11 +147,13 @@ nav ul li a {
 }
 
 .timeline-item.top {
-    transform: translateY(-50%);
+    align-self: flex-start;
+    margin-bottom: 4rem; /* Create space for the line */
 }
 
 .timeline-item.bottom {
-    transform: translateY(50%);
+    align-self: flex-end;
+    margin-top: 4rem; /* Create space for the line */
 }
 
 .timeline-content {
