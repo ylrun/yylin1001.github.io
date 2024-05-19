@@ -114,7 +114,7 @@ nav ul li a {
 .slides img {
     width: 100%;
     height: auto;
-    max-width: 300px;
+    max-width: 300px; /* Set a maximum width */
 }
 
 #timeline {
@@ -171,6 +171,7 @@ nav ul li a {
 
 .timeline-content {
     padding: 1rem;
+    text-align: center;
 }
 
 .timeline-item h3 {
