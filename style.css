@@ -200,4 +200,12 @@ footer ul {
     justify-content: center;
 }
 
-footer ul li
+footer ul li {
+    margin: 0 1rem;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
