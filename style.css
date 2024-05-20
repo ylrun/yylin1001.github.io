@@ -127,6 +127,7 @@ nav ul li a {
 
 #timeline {
     background-color: #f9f9f9;
+    padding: 2rem 0;
 }
 
 #timeline h2 {
@@ -135,11 +136,8 @@ nav ul li a {
 }
 
 .timeline-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     position: relative;
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 2rem 0;
 }
@@ -147,13 +145,12 @@ nav ul li a {
 .timeline-container::before {
     content: '';
     position: absolute;
-    width: 4px;
-    height: 100%;
-    background-color: #333;
     top: 0;
+    bottom: 0;
     left: 50%;
+    width: 4px;
+    background-color: #333;
     transform: translateX(-50%);
-    z-index: -1;
 }
 
 .timeline-item {
@@ -166,28 +163,24 @@ nav ul li a {
     margin: 2rem 0;
 }
 
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    width: 4px;
-    height: 100%;
-    background-color: #333;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -1;
+.timeline-item.top {
+    margin-left: 55%;
+}
+
+.timeline-item.bottom {
+    margin-left: 0;
 }
 
 .timeline-item .timeline-marker {
     position: absolute;
+    top: 50%;
+    left: -10px;
     width: 20px;
     height: 20px;
     background-color: #333;
     border: 4px solid #fff;
     border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
 }
 
 .timeline-content {
