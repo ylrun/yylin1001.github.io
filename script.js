@@ -21,4 +21,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     setInterval(showNextSlide, 3000);
+
+    // Timeline Animation
+    const timelineItems = document.querySelectorAll('.timeline-item');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    timelineItems.forEach(item => {
+        observer.observe(item);
+    });
 });
