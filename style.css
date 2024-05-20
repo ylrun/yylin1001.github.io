@@ -1,7 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f3f4f6;
 }
 
 header {
@@ -38,6 +39,7 @@ nav ul li a {
     padding: 100px 0;
     text-align: center;
     overflow: hidden;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
 }
 
 .background-blink {
@@ -67,16 +69,28 @@ nav ul li a {
 
 .welcome h1 {
     font-size: 2.5rem;
+    font-family: 'Arial Black', sans-serif;
 }
 
 .welcome p {
     font-size: 1.2rem;
+    font-family: 'Arial', sans-serif;
 }
 
 .welcome button {
     margin-top: 1rem;
     padding: 0.5rem 1rem;
     font-size: 1rem;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.welcome button:hover {
+    background-color: #f0f0f0;
 }
 
 .profile-photo {
@@ -99,6 +113,10 @@ nav ul li a {
 
 #about, #projects, #contact, #timeline {
     padding: 2rem;
+    background-color: #fff;
+    margin: 2rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #projects .slider {
@@ -123,6 +141,7 @@ nav ul li a {
     width: 100%;
     height: auto;
     max-width: 300px;
+    border-radius: 10px;
 }
 
 #timeline {
@@ -133,6 +152,8 @@ nav ul li a {
 #timeline h2 {
     text-align: center;
     margin-bottom: 2rem;
+    font-family: 'Arial Black', sans-serif;
+    color: #333;
 }
 
 .timeline-container {
@@ -149,7 +170,7 @@ nav ul li a {
     bottom: 0;
     left: 50%;
     width: 4px;
-    background-color: #333;
+    background-color: #6a11cb;
     transform: translateX(-50%);
 }
 
@@ -161,6 +182,11 @@ nav ul li a {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     margin: 2rem 0;
+    transition: transform 0.3s;
+}
+
+.timeline-item:hover {
+    transform: translateY(-10px);
 }
 
 .timeline-item.top {
@@ -177,10 +203,14 @@ nav ul li a {
     left: -10px;
     width: 20px;
     height: 20px;
-    background-color: #333;
+    background-color: #6a11cb;
     border: 4px solid #fff;
     border-radius: 50%;
     transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    line-height: 20px;
 }
 
 .timeline-content {
@@ -191,11 +221,13 @@ nav ul li a {
 .timeline-item h3 {
     margin-top: 0;
     color: #333;
+    font-family: 'Arial Black', sans-serif;
 }
 
 .timeline-item p {
     margin: 0;
     color: #666;
+    font-family: 'Arial', sans-serif;
 }
 
 footer {
