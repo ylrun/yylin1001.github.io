@@ -131,10 +131,12 @@ nav ul li a {
 #projects .slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    width: 300%;
 }
 
 #projects .slide {
     min-width: 100%;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .project-img {
@@ -158,92 +160,77 @@ nav ul li a {
 
 .timeline-container {
     position: relative;
-    max-width: 800px;
+    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 0;
 }
 
-.timeline-container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    width: 4px;
-    background-color: #6a11cb;
-    transform: translateX(-50%);
-}
-
 .timeline-item {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 0;
     position: relative;
-    width: 45%;
-    background-color: #fff;
-    padding: 1rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    margin: 2rem 0;
-    transition: transform 0.3s;
-}
-
-.timeline-item:hover {
-    transform: translateY(-10px);
 }
 
 .timeline-item.top {
-    margin-left: 55%;
+    justify-content: flex-start;
 }
 
 .timeline-item.bottom {
-    margin-left: 0;
+    justify-content: flex-end;
 }
 
-.timeline-item .timeline-marker {
-    position: absolute;
-    top: 50%;
-    left: -10px;
+.timeline-marker {
     width: 20px;
     height: 20px;
     background-color: #6a11cb;
-    border: 4px solid #fff;
     border-radius: 50%;
-    transform: translateY(-50%);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
     font-size: 1.2rem;
-    color: white;
-    text-align: center;
-    line-height: 20px;
 }
 
 .timeline-content {
+    max-width: 40%;
+    background-color: #fff;
     padding: 1rem;
-    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
 }
 
-.timeline-item h3 {
-    margin-top: 0;
-    color: #333;
-    font-family: 'Arial Black', sans-serif;
+.timeline-item:hover .timeline-content {
+    transform: scale(1.05);
 }
 
-.timeline-item p {
-    margin: 0;
-    color: #666;
-    font-family: 'Arial', sans-serif;
+.timeline-item.top .timeline-content {
+    transform-origin: left;
+}
+
+.timeline-item.bottom .timeline-content {
+    transform-origin: right;
 }
 
 footer {
+    text-align: center;
+    padding: 2rem 0;
     background-color: #333;
     color: white;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
 }
 
 footer ul {
     list-style: none;
     padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
+    margin: 1rem 0;
 }
 
 footer ul li {
@@ -253,5 +240,10 @@ footer ul li {
 footer ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
 }
