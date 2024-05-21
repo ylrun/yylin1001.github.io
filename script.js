@@ -1,41 +1,23 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function () {
     const toggleBtn = document.getElementById('toggle-btn');
     const animatedText = document.querySelector('.animated-text');
 
-    toggleBtn.addEventListener('click', () => {
-        if (animatedText.style.animation) {
-            animatedText.style.animation = '';
-        } else {
-            animatedText.style.animation = 'text-animate 2s linear infinite';
-        }
+    toggleBtn.addEventListener('click', function () {
+        animatedText.classList.toggle('fadeIn');
     });
 
-    // Image Slider
-    const slides = document.querySelectorAll('.slide');
+    const slides = document.querySelector('.slides');
+    const slideImages = document.querySelectorAll('.slide img');
+
     let currentIndex = 0;
 
-    function showNextSlide() {
-        slides[currentIndex].classList.remove('visible');
-        currentIndex = (currentIndex + 1) % slides.length;
-        slides[currentIndex].classList.add('visible');
+    function showSlide(index) {
+        const slideWidth = slides.clientWidth;
+        slides.style.transform = `translateX(${-index * slideWidth}px)`;
     }
 
-    setInterval(showNextSlide, 3000);
-
-    // Timeline Animation
-    const timelineItems = document.querySelectorAll('.timeline-item');
-
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('in-view');
-            }
-        });
-    }, {
-        threshold: 0.1
-    });
-
-    timelineItems.forEach(item => {
-        observer.observe(item);
-    });
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % slideImages.length;
+        showSlide(currentIndex);
+    }, 3000);
 });
