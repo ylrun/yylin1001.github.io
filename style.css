@@ -172,21 +172,17 @@ nav ul li a {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem 0;
 }
 
 .timeline-item {
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: flex-start;
     padding: 1rem 0;
     position: relative;
 }
 
-.timeline-item.top {
-    justify-content: flex-start;
-}
-
-.timeline-item.bottom {
+.timeline-item:nth-child(even) {
     justify-content: flex-end;
 }
 
@@ -203,6 +199,7 @@ nav ul li a {
     align-items: center;
     color: #fff;
     font-size: 1.2rem;
+    z-index: 1;
 }
 
 .timeline-content {
@@ -213,18 +210,19 @@ nav ul li a {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
     cursor: pointer;
+    z-index: 1;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    transform-origin: left;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    transform-origin: right;
 }
 
 .timeline-item:hover .timeline-content {
     transform: scale(1.05);
-}
-
-.timeline-item.top .timeline-content {
-    transform-origin: left;
-}
-
-.timeline-item.bottom .timeline-content {
-    transform-origin: right;
 }
 
 footer {
