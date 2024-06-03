@@ -183,7 +183,7 @@ nav ul li a {
     margin: 20px 0;
     border-radius: 6px;
     align-self: center;
-    width: 50vw;
+    width: 100%;
 
     &:nth-child(2n + 1) {
         flex-direction: row-reverse;
