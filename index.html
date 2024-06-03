@@ -6,6 +6,7 @@
     <title>Welcome to My GitHub Page</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://kit.fontawesome.com/fc596df623.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -26,7 +27,6 @@
             <img src="https://raw.githubusercontent.com/ylrun/yylin1001.github.io/main/WechatIMG42.jpeg" alt="Yurun Lin" class="profile-photo">
             <h1 class="animated-text">Welcome to My Website!</h1>
             <p>Hello, I'm Yurun Lin, a Business Analyst and Software Engineer with a passion for data visualization and web development.</p>
-            <button id="toggle-btn">Toggle Animation</button>
         </div>
     </section>
     <section id="about">
@@ -54,89 +54,59 @@
         </div>
     </section>
     <section id="timeline">
-        <h2>My Journey </h2>
+        <h2>My Journey</h2>
+        <h1>Timeline of Key Milestones</h1>
         <div class="timeline">
-          <div class="timeline__event animated fadeInUp delay-3s timeline__event--type1">
-            <div class="timeline__event__icon">
-              <i class="lni-graduation"></i>
+            <div class="timeline__event animated fadeInUp delay-3s timeline__event--type1">
+                <div class="timeline__event__icon"></div>
+                <div class="timeline__event__date">2019</div>
+                <div class="timeline__event__content">
+                    <div class="timeline__event__title">Graduated from The Ohio State University</div>
+                    <div class="timeline__event__description">
+                        <p>Bachelor of Science in Political Science</p>
+                    </div>
+                </div>
             </div>
-            <div class="timeline__event__date">
-              2019
+            <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
+                <div class="timeline__event__icon"></div>
+                <div class="timeline__event__date">2021</div>
+                <div class="timeline__event__content">
+                    <div class="timeline__event__title">Graduated from University of Washington</div>
+                    <div class="timeline__event__description">
+                        <p>Master of Science in Public Policy</p>
+                    </div>
+                </div>
             </div>
-            <div class="timeline__event__content">
-              <div class="timeline__event__title">
-                Graduated from The Ohio State University
-              </div>
-              <div class="timeline__event__description">
-                <p>Bachelor of Science in Political Science</p>
-              </div>
+            <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
+                <div class="timeline__event__icon"></div>
+                <div class="timeline__event__date">2021 - 2023</div>
+                <div class="timeline__event__content">
+                    <div class="timeline__event__title">Worked at Huawei</div>
+                    <div class="timeline__event__description">
+                        <p>Business Analyst/Software Engineer Collected, structured, and managed data for risk assessment and data visualization, updated data constantly from different databases (PostgreSQL, Oracle) using SQL. Performed data analysis and validation by using Python, monitored and improved business metrics with statistics methods, extracted data to build customized reports and to develop a website.</p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
-            <div class="timeline__event__icon">
-              <i class="lni-graduation"></i>
+            <div class="timeline__event animated fadeInUp timeline__event--type1">
+                <div class="timeline__event__icon"></div>
+                <div class="timeline__event__date">October 2023</div>
+                <div class="timeline__event__content">
+                    <div class="timeline__event__title">Started at Drexel University</div>
+                    <div class="timeline__event__description">
+                        <p>Master of Science in Computer Science Relevant course work: Machine Learning, Parallel Programming, Data Structures and Algorithms</p>
+                    </div>
+                </div>
             </div>
-            <div class="timeline__event__date">
-              2021
+            <div class="timeline__event animated fadeInUp timeline__event--type2">
+                <div class="timeline__event__icon"></div>
+                <div class="timeline__event__date">June 2025</div>
+                <div class="timeline__event__content">
+                    <div class="timeline__event__title">Expected Graduation</div>
+                    <div class="timeline__event__description">
+                        <p>Master of Science in Computer Science</p>
+                    </div>
+                </div>
             </div>
-            <div class="timeline__event__content">
-              <div class="timeline__event__title">
-                Graduated from University of Washington
-              </div>
-              <div class="timeline__event__description">
-                <p>Master of Science in Public Policy</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
-            <div class="timeline__event__icon">
-              <i class="lni-briefcase"></i>
-            </div>
-            <div class="timeline__event__date">
-              2021 - 2023
-            </div>
-            <div class="timeline__event__content">
-              <div class="timeline__event__title">
-                Worked at Huawei
-              </div>
-              <div class="timeline__event__description">
-                <p>Business Analyst/Software Engineer
-                   Collected, structured, and managed data for risk assessment and data visualization, updated data constantly from different databases (PostgreSQL, Oracle) using SQL. Performed data analysis and validation by using Python, monitored and improved business metrics with statistics methods, extracted data to build customized reports and to develop a website. </p>            
-              </div>
-            </div>
-          </div>
-          <div class="timeline__event animated fadeInUp timeline__event--type1">
-            <div class="timeline__event__icon">
-              <i class="lni-university"></i>
-            </div>
-            <div class="timeline__event__date">
-              October 2023
-            </div>
-            <div class="timeline__event__content">
-              <div class="timeline__event__title">
-                Started at Drexel University
-              </div>
-              <div class="timeline__event__description">
-                <p>Master of Science in Computer Science Relevant course work: Machine Learning, Parallel Programming, Data Structures and Algorithms </p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline__event animated fadeInUp timeline__event--type2">
-            <div class="timeline__event__icon">
-              <i class="lni-graduation"></i>
-            </div>
-            <div class="timeline__event__date">
-              June 2025
-            </div>
-            <div class="timeline__event__content">
-              <div class="timeline__event__title">
-                Expected Graduation
-              </div>
-              <div class="timeline__event__description">
-                <p>Master of Science in Computer Science</p>
-              </div>
-            </div>
-          </div>
         </div>
     </section>
     <section id="contact">
