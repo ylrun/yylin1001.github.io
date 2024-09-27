@@ -505,3 +505,65 @@ nav ul li a {
 .content{
     color:#abbdcb
 }
+/* Footer Styling */
+footer {
+    background-color: #1a1a1a;
+    padding: 40px 0;
+    color: #fff;
+    text-align: center;
+}
+
+footer .connect h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+footer .social-icons a {
+    color: #ffffff;
+    font-size: 2rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+    position: relative;
+}
+
+footer .social-icons a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #007bff;
+    left: 50%;
+    bottom: -5px;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #007bff;
+    transform: translateY(-5px);
+}
+
+footer .social-icons a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+footer p {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+@media (max-width: 600px) {
+    footer .social-icons {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
