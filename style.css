@@ -220,7 +220,7 @@ nav ul li a {
 }
 
 .profile-img {
-    width: 140px; /* Smaller image */
+    width: 180px; /* Smaller image */
     height: 120px;
     border-radius: 50%;
     border: 5px solid #fff;
@@ -434,6 +434,31 @@ nav ul li a {
     height: auto;
     position: relative;
     margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.typing-container {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(14, 7, 119);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    white-space: nowrap;
+    overflow: hidden;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Style for individual skill items in the vertical list */
+.skill-item {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(14, 7, 119);
+    margin-bottom: 8px;
+    text-align: left;
 }
 
 .skill {
