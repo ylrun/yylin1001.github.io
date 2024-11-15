@@ -9,13 +9,17 @@ document.addEventListener('DOMContentLoaded', () => {
         "Data Engineering"
     ];
 
-    const typingText = document.querySelector('.typing-text');
+    const typingContainer = document.querySelector('.typing-container');
+    const typingText = document.createElement('span');
+    typingText.classList.add('typing-text');
+    typingContainer.appendChild(typingText);
+
     let skillIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
     let fullTextDisplayed = false;
-    const typingSpeed = 100; // Typing and deleting speed
-    const pauseTime = 1000; // Pause time before moving to the next skill
+    const typingSpeed = 100;
+    const pauseTime = 1000;
 
     function type() {
         if (!fullTextDisplayed) {
@@ -33,8 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 skillIndex++;
 
                 if (skillIndex === skills.length) {
-                    fullTextDisplayed = true; // Stop animation after the full list
-                    typingText.textContent = skills.join(" | ");
+                    fullTextDisplayed = true;
+                    displayAllSkills();
                     return;
                 }
             }
@@ -44,6 +48,17 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(type, nextSpeed);
     }
 
+    function displayAllSkills() {
+        typingContainer.innerHTML = ''; // Clear the typing text
+        skills.forEach(skill => {
+            const skillElement = document.createElement('div');
+            skillElement.classList.add('skill-item');
+            skillElement.textContent = skill;
+            typingContainer.appendChild(skillElement);
+        });
+    }
+
     type();
 });
+
 
