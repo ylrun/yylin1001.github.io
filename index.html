@@ -3,123 +3,187 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Yurun Lin — software engineer and data-focused builder working across backend systems, analytics, AI evaluation, and full-stack products." />
-  <meta name="theme-color" content="#0b1020" />
-  <title>Yurun Lin | Software Engineer & Data Builder</title>
+  <meta name="description" content="Yurun Lin — software engineer working across backend systems, data, analytics, and AI evaluation." />
+  <meta name="theme-color" content="#f5f0e6" />
+  <title>Yurun Lin | Software Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="paper-noise" aria-hidden="true"></div>
+
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="#top" aria-label="Yurun Lin home">YL<span>.</span></a>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+      <a class="brand" href="#top" aria-label="Yurun Lin home">
+        <span class="brand-mark">YL<span class="brand-dot">.</span></span>
+        <span class="brand-name">YURUN LIN</span>
+        <span class="brand-line" aria-hidden="true"></span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="menu-dot"></span>Menu
+      </button>
+
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
-        <a class="nav-cta" href="#contact">Contact</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main id="top">
-    <section class="hero section">
-      <div class="container hero-grid">
+    <section class="hero">
+      <div class="hero-inner container">
+        <div class="vertical-note" aria-hidden="true">
+          <span>コードとデータで、ビジネスを前へ。</span>
+          <i></i>
+          <b>改善</b>
+        </div>
+
         <div class="hero-copy reveal">
           <p class="eyebrow">Software Engineering · Data · AI</p>
-          <h1>I build systems that turn messy problems into <span>working products.</span></h1>
+          <p class="jp-kicker" lang="ja">複雑な課題を、価値あるプロダクトへ。</p>
+          <h1>I build systems that turn messy problems into <em>working products.</em></h1>
           <p class="hero-intro">I'm <strong>Yurun Lin</strong>, a software engineer with experience spanning backend development, analytics, full-stack systems, forecasting, and multimodal AI research.</p>
           <div class="hero-actions">
-            <a class="button primary" href="#projects">View selected work</a>
-            <a class="button secondary" href="https://github.com/ylrun" target="_blank" rel="noreferrer">GitHub ↗</a>
-          </div>
-          <div class="quick-facts" aria-label="Highlights">
-            <div><strong>Python + SQL</strong><span>Data & backend</span></div>
-            <div><strong>React + Flask</strong><span>Full-stack systems</span></div>
-            <div><strong>Docker + K8s</strong><span>Deployment & scale</span></div>
+            <a class="button primary" href="#projects">View selected work <span>↗</span></a>
+            <a class="button text-button" href="https://github.com/ylrun" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
           </div>
         </div>
 
-        <aside class="hero-card reveal" aria-label="Professional summary">
-          <div class="status"><span></span> Open to software, data & analytics roles</div>
-          <div class="portrait-mark" aria-hidden="true">YL</div>
-          <p class="hero-card-label">Current focus</p>
-          <h2>Building reliable software with measurable business impact.</h2>
-          <p>I enjoy work where engineering and decision-making meet: designing APIs, analyzing operational data, improving workflows, and evaluating AI systems.</p>
-          <div class="hero-card-footer">
-            <span>New Jersey, USA</span>
-            <span>MS Computer Science</span>
-          </div>
-        </aside>
+        <div class="hero-art reveal" aria-hidden="true">
+          <svg class="fuji-art" viewBox="0 0 760 520" role="presentation">
+            <defs>
+              <linearGradient id="mountain" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#304354" />
+                <stop offset="0.52" stop-color="#263746" />
+                <stop offset="1" stop-color="#172736" />
+              </linearGradient>
+              <linearGradient id="mist" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#f5f0e6" stop-opacity="0" />
+                <stop offset="0.5" stop-color="#f5f0e6" stop-opacity="0.86" />
+                <stop offset="1" stop-color="#f5f0e6" stop-opacity="0" />
+              </linearGradient>
+            </defs>
+            <circle class="sun" cx="490" cy="160" r="118" />
+            <path class="back-hill" d="M0 395 C115 315 190 360 270 328 C375 286 475 328 565 285 C635 252 705 266 760 245 L760 520 L0 520 Z" />
+            <path fill="url(#mountain)" d="M88 464 L365 128 L700 464 Z" />
+            <path class="snow" d="M365 128 L304 203 L338 191 L358 218 L378 185 L401 207 L424 194 L454 232 L700 464 L88 464 L284 227 L318 195 Z" />
+            <path class="mist-band" fill="url(#mist)" d="M25 355 C175 321 272 392 427 351 C538 322 620 342 755 314 L755 400 C611 427 513 386 390 421 C248 459 143 395 25 430 Z" />
+            <path class="brush-hill" d="M0 454 C80 391 132 418 190 400 C270 376 318 426 405 395 C495 363 535 422 620 385 C682 359 720 368 760 350 L760 520 L0 520 Z" />
+            <path class="branch" d="M534 74 C592 96 630 80 682 47 C707 31 731 23 760 22" />
+            <path class="twig" d="M602 86 C626 56 642 38 660 26" />
+            <path class="twig" d="M665 54 C686 68 705 82 731 90" />
+            <g class="blossoms">
+              <circle cx="580" cy="82" r="7"/><circle cx="604" cy="73" r="10"/><circle cx="626" cy="55" r="7"/>
+              <circle cx="648" cy="40" r="9"/><circle cx="675" cy="48" r="8"/><circle cx="695" cy="40" r="10"/>
+              <circle cx="717" cy="30" r="7"/><circle cx="734" cy="82" r="8"/><circle cx="709" cy="74" r="6"/>
+            </g>
+          </svg>
+          <div class="art-seal" lang="ja">誠</div>
+        </div>
+      </div>
+
+      <div class="skill-ribbon">
+        <div class="container ribbon-grid">
+          <article>
+            <span class="skill-icon">&lt;/&gt;</span>
+            <div><h3>Python + SQL</h3><p>Data analysis, API design, and backend engineering.</p></div>
+          </article>
+          <article>
+            <span class="skill-icon">層</span>
+            <div><h3>React + Flask</h3><p>Clean, maintainable full-stack systems.</p></div>
+          </article>
+          <article>
+            <span class="skill-icon">箱</span>
+            <div><h3>Docker + K8s</h3><p>Deployment, containerization, and scale.</p></div>
+          </article>
+          <article>
+            <span class="skill-icon">析</span>
+            <div><h3>Data & Analytics</h3><p>Turning data into measurable impact.</p></div>
+          </article>
+          <article class="focus-card">
+            <div><span>Current focus</span><p>Reliable software with measurable business impact.</p></div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="about" class="section section-muted">
-      <div class="container split-layout">
-        <div class="section-heading reveal">
-          <p class="eyebrow">About</p>
-          <h2>An engineer who can move between code, data, and operations.</h2>
+    <section id="about" class="section about-section">
+      <div class="container about-grid">
+        <div class="about-title reveal">
+          <p class="section-label"><span></span>About</p>
+          <h2>An engineer who moves between <em>code, data, and operations.</em></h2>
+          <p class="jp-subtitle" lang="ja">技術とデータを、現場の価値へ。</p>
+          <div class="bamboo" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i>
+          </div>
         </div>
+
         <div class="about-copy reveal">
           <p>My background is intentionally cross-functional. I have worked on software and analytics at Huawei, built data-intensive web systems, worked with operational and financial workflows, and pursued graduate study in computer science after earlier training in public policy.</p>
           <p>That range helps me translate ambiguous business problems into concrete technical work: define the metric, find the data, build the system, validate the result, and communicate what matters.</p>
-          <div class="education-grid">
-            <article>
-              <span>2025</span>
-              <h3>Drexel University</h3>
-              <p>M.S. Computer Science</p>
-            </article>
-            <article>
-              <span>2021</span>
-              <h3>University of Washington</h3>
-              <p>Graduate study in Public Policy</p>
-            </article>
-            <article>
-              <span>2019</span>
-              <h3>The Ohio State University</h3>
-              <p>B.S. Political Science</p>
-            </article>
-          </div>
+        </div>
+
+        <div class="education-card reveal">
+          <span class="card-pattern" aria-hidden="true"></span>
+          <article>
+            <div class="edu-icon">学</div>
+            <div><span>2025</span><h3>Drexel University</h3><p>M.S. Computer Science</p></div>
+          </article>
+          <article>
+            <div class="edu-icon red">政</div>
+            <div><span>2021</span><h3>University of Washington</h3><p>M.S. Public Policy</p></div>
+          </article>
+          <article>
+            <div class="edu-icon">文</div>
+            <div><span>2019</span><h3>The Ohio State University</h3><p>B.S. Political Science</p></div>
+          </article>
+          <div class="vertical-tag" lang="ja">学びは力なり</div>
         </div>
       </div>
     </section>
 
-    <section id="experience" class="section">
+    <section id="experience" class="section experience-section">
       <div class="container">
         <div class="section-heading reveal">
-          <p class="eyebrow">Experience</p>
-          <h2>Selected professional experience</h2>
-          <p class="section-subtitle">A mix of engineering, analytics, and hands-on operational problem solving.</p>
+          <p class="section-label"><span></span>Experience</p>
+          <h2>Selected professional <em>experience.</em></h2>
+          <p>Engineering, analytics, and hands-on operational problem solving.</p>
         </div>
 
         <div class="experience-list">
           <article class="experience-item reveal">
+            <div class="experience-index">01</div>
             <div class="experience-meta"><span>2025–2026</span><span>New Jersey</span></div>
             <div>
               <h3>Operations Analyst <span>· Eternal Supplies</span></h3>
-              <p>Worked across ERP, e-commerce, CRM, accounting, inventory, logistics, and customer workflows. Used operational data to reconcile inventory, track orders and payments, identify exceptions, and improve day-to-day execution across systems including Odoo and QuickBooks.</p>
+              <p>Worked across ERP, e-commerce, CRM, accounting, inventory, logistics, and customer workflows. Used operational data to reconcile inventory, track orders and payments, identify exceptions, and improve day-to-day execution.</p>
               <div class="tags"><span>Operations Analytics</span><span>Odoo</span><span>Inventory</span><span>QuickBooks</span></div>
             </div>
           </article>
 
           <article class="experience-item reveal">
+            <div class="experience-index">02</div>
             <div class="experience-meta"><span>2025</span><span>Shanghai</span></div>
             <div>
-              <h3>Technical R&D Engineer <span>· Smart Construction Systems</span></h3>
-              <p>Developed a microservice-based safety platform combining IoT telemetry, cloud services, machine-learning components, and a React frontend. Worked with Flask, PostgreSQL, Redis, Docker, Kubernetes, Nginx, and Gunicorn while targeting low-latency APIs and high-throughput messaging.</p>
+              <h3>Technical R&amp;D Engineer <span>· Smart Construction Systems</span></h3>
+              <p>Developed a microservice-based safety platform combining IoT telemetry, cloud services, machine-learning components, and a React frontend. Worked with Flask, PostgreSQL, Redis, Docker, Kubernetes, Nginx, and Gunicorn.</p>
               <div class="tags"><span>Flask</span><span>PostgreSQL</span><span>React</span><span>Docker</span><span>Kubernetes</span></div>
             </div>
           </article>
 
           <article class="experience-item reveal">
+            <div class="experience-index">03</div>
             <div class="experience-meta"><span>2021–2023</span><span>Huawei</span></div>
             <div>
               <h3>Software Engineer / Business Analyst <span>· Huawei</span></h3>
-              <p>Built internal web and analytics solutions, worked with PostgreSQL and Oracle data, and supported forecasting across 30 business indicators with an 18-month horizon. Led a four-person internal web project and collaborated with finance and business stakeholders on reporting and decision support.</p>
+              <p>Built internal web and analytics solutions, worked with PostgreSQL and Oracle data, and supported forecasting across 30 business indicators with an 18-month horizon. Led a four-person internal web project and collaborated with finance and business stakeholders.</p>
               <div class="tags"><span>Python</span><span>SQL</span><span>Forecasting</span><span>Web Development</span><span>Analytics</span></div>
             </div>
           </article>
@@ -127,101 +191,100 @@
       </div>
     </section>
 
-    <section id="projects" class="section section-dark">
+    <section id="projects" class="section projects-section">
       <div class="container">
-        <div class="section-heading light reveal">
-          <p class="eyebrow">Projects</p>
-          <h2>Work that shows how I think and build.</h2>
-          <p class="section-subtitle">Selected engineering and research projects rather than a long list of coursework.</p>
+        <div class="projects-heading reveal">
+          <div>
+            <p class="section-label light"><span></span>Selected work</p>
+            <h2>Projects that show <em>how I build.</em></h2>
+          </div>
+          <p>Engineering and research work selected for depth, not volume.</p>
         </div>
 
         <div class="project-grid">
           <article class="project-card featured reveal">
-            <div class="project-number">01</div>
-            <div class="project-content">
-              <p class="project-kicker">AI Evaluation · Research</p>
-              <h3>VLM Judge Robustness & Persuasion Study</h3>
-              <p>Investigated how explanation style affects multimodal model judges across VQA and hallucination benchmarks. The work compares multiple judging conditions and analyzes how persuasive or mismatched explanations shift acceptance and rejection behavior.</p>
+            <div class="project-top"><span>01</span><span>AI Evaluation · Research</span></div>
+            <div>
+              <h3>VLM Judge Robustness &amp; Persuasion Study</h3>
+              <p>Investigated how explanation style affects multimodal model judges across VQA and hallucination benchmarks, comparing multiple judging conditions and analyzing shifts in acceptance and rejection behavior.</p>
               <div class="tags dark-tags"><span>VLM</span><span>LLM Evaluation</span><span>Python</span><span>Experiment Design</span></div>
               <span class="private-note">Research repository currently private</span>
             </div>
           </article>
 
           <article class="project-card reveal">
-            <div class="project-number">02</div>
-            <div class="project-content">
-              <p class="project-kicker">Systems · Networking</p>
+            <div class="project-top"><span>02</span><span>Systems · Networking</span></div>
+            <div>
               <h3>StateStream-QUIC</h3>
               <p>A networking-focused project exploring state streaming over QUIC, with emphasis on modern transport behavior and practical system implementation.</p>
               <div class="tags dark-tags"><span>Networking</span><span>QUIC</span><span>Systems</span></div>
-              <a class="text-link" href="https://github.com/ylrun/StateStream-QUIC" target="_blank" rel="noreferrer">View repository ↗</a>
+              <a class="project-link" href="https://github.com/ylrun/StateStream-QUIC" target="_blank" rel="noreferrer">View repository ↗</a>
             </div>
           </article>
 
           <article class="project-card reveal">
-            <div class="project-number">03</div>
-            <div class="project-content">
-              <p class="project-kicker">NLP · Machine Learning</p>
+            <div class="project-top"><span>03</span><span>NLP · Machine Learning</span></div>
+            <div>
               <h3>IMDB Sentiment Analysis</h3>
-              <p>Built and evaluated a text classification workflow for movie-review sentiment, applying NLP preprocessing and supervised learning techniques.</p>
+              <p>Built and evaluated a text-classification workflow for movie-review sentiment using NLP preprocessing and supervised learning techniques.</p>
               <div class="tags dark-tags"><span>NLP</span><span>Machine Learning</span><span>Python</span></div>
-              <a class="text-link" href="https://github.com/ylrun/Sentiment_Analysis_on_IMDB" target="_blank" rel="noreferrer">View repository ↗</a>
+              <a class="project-link" href="https://github.com/ylrun/Sentiment_Analysis_on_IMDB" target="_blank" rel="noreferrer">View repository ↗</a>
             </div>
           </article>
 
           <article class="project-card reveal">
-            <div class="project-number">04</div>
-            <div class="project-content">
-              <p class="project-kicker">Full Stack · API</p>
+            <div class="project-top"><span>04</span><span>Full Stack · API</span></div>
+            <div>
               <h3>City Weather Application</h3>
               <p>A web application that retrieves and presents live city weather data through an external API, combining backend data access with a responsive frontend.</p>
               <div class="tags dark-tags"><span>Python</span><span>JavaScript</span><span>HTML/CSS</span><span>REST API</span></div>
-              <a class="text-link" href="https://github.com/ylrun/weather_application" target="_blank" rel="noreferrer">View repository ↗</a>
+              <a class="project-link" href="https://github.com/ylrun/weather_application" target="_blank" rel="noreferrer">View repository ↗</a>
             </div>
           </article>
 
           <article class="project-card reveal">
-            <div class="project-number">05</div>
-            <div class="project-content">
-              <p class="project-kicker">Computer Vision</p>
-              <h3>Vision Assignment Collection</h3>
-              <p>Computer vision experiments and implementations developed during graduate study, focused on practical image-processing and visual-computing techniques.</p>
+            <div class="project-top"><span>05</span><span>Computer Vision</span></div>
+            <div>
+              <h3>Vision Experiments</h3>
+              <p>Computer vision experiments developed during graduate study, focused on practical image-processing and visual-computing techniques.</p>
               <div class="tags dark-tags"><span>Computer Vision</span><span>Python</span></div>
-              <a class="text-link" href="https://github.com/ylrun/vision_assignment" target="_blank" rel="noreferrer">View repository ↗</a>
+              <a class="project-link" href="https://github.com/ylrun/vision_assignment" target="_blank" rel="noreferrer">View repository ↗</a>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="skills" class="section">
-      <div class="container split-layout">
+    <section id="skills" class="section skills-section">
+      <div class="container skills-layout">
         <div class="section-heading reveal">
-          <p class="eyebrow">Toolkit</p>
-          <h2>Technologies I use to ship and analyze.</h2>
+          <p class="section-label"><span></span>Toolkit</p>
+          <h2>Tools I use to <em>ship and analyze.</em></h2>
+          <p class="jp-subtitle" lang="ja">つくる。測る。改善する。</p>
         </div>
         <div class="skills-grid reveal">
-          <article><h3>Languages</h3><p>Python, Java, C, C++, Go, JavaScript, Swift, R, SQL</p></article>
-          <article><h3>Backend & Data</h3><p>Flask, PostgreSQL, Oracle, Redis, REST APIs, data pipelines, analytics</p></article>
-          <article><h3>Frontend</h3><p>React, HTML, CSS, JavaScript, SwiftUI</p></article>
-          <article><h3>Infrastructure</h3><p>Docker, Kubernetes, Nginx, Gunicorn, Linux</p></article>
-          <article><h3>Analytics</h3><p>Power BI, forecasting, KPI design, data validation, operational analysis</p></article>
-          <article><h3>AI / ML</h3><p>Machine learning, NLP, computer vision, multimodal evaluation, LLM/VLM experimentation</p></article>
+          <article><span>01</span><h3>Languages</h3><p>Python, Java, C, C++, Go, JavaScript, Swift, R, SQL</p></article>
+          <article><span>02</span><h3>Backend &amp; Data</h3><p>Flask, PostgreSQL, Oracle, Redis, REST APIs, data pipelines</p></article>
+          <article><span>03</span><h3>Frontend</h3><p>React, HTML, CSS, JavaScript, SwiftUI</p></article>
+          <article><span>04</span><h3>Infrastructure</h3><p>Docker, Kubernetes, Nginx, Gunicorn, Linux</p></article>
+          <article><span>05</span><h3>Analytics</h3><p>Power BI, forecasting, KPI design, data validation, operational analysis</p></article>
+          <article><span>06</span><h3>AI / ML</h3><p>Machine learning, NLP, computer vision, multimodal evaluation, LLM/VLM experiments</p></article>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section contact-section">
-      <div class="container contact-card reveal">
+    <section id="contact" class="contact-section">
+      <div class="container contact-grid reveal">
+        <div class="contact-seal" aria-hidden="true">結</div>
         <div>
-          <p class="eyebrow">Contact</p>
-          <h2>Let's build something useful.</h2>
+          <p class="section-label"><span></span>Contact</p>
+          <h2>Let's build something <em>useful.</em></h2>
           <p>I'm interested in software engineering, data, analytics, and technically hands-on product roles.</p>
         </div>
         <div class="contact-links">
-          <a href="mailto:marklin2360@gmail.com">marklin2360@gmail.com ↗</a>
-          <a href="https://www.linkedin.com/in/yurun-lin-5b58602a2/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-          <a href="https://github.com/ylrun" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a href="mailto:marklin2360@gmail.com">Email <span>↗</span></a>
+          <a href="https://www.linkedin.com/in/yurun-lin-5b58602a2/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+          <a href="https://github.com/ylrun" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
         </div>
       </div>
     </section>
@@ -230,7 +293,8 @@
   <footer class="site-footer">
     <div class="container footer-wrap">
       <span>© <span id="year"></span> Yurun Lin</span>
-      <span>Designed & built for clarity, speed, and real work.</span>
+      <span>Software · Data · AI</span>
+      <span lang="ja">改善を重ね、価値をつくる。</span>
     </div>
   </footer>
 
